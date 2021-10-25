@@ -1,18 +1,14 @@
-name: vitessce-jupyter-examples
+name: vitessce-mesmer-processing
 channels:
  - bioconda
  - conda-forge
 dependencies:
  - python>=3.7
- - numpy>=1.14.0
- - pandas>=1.1.2
- - anndata>=0.7.4
- - numba>=0.53.0
- - scanpy>=1.6.0
  - jupyterlab>=3
- - zarr>=2.5.0
- - boto3>=1.16.30
+ - snakemake
+ - pandas
+ - beautifulsoup4
+ - lxml
  - pip
  - pip:
-   - loompy>=3.0.6
-   - scikit-misc>=0.1.3
+   - vitessce

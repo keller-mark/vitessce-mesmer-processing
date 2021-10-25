@@ -1,8 +1,19 @@
+
+Create and activate the Python environment using `conda`:
+
 ```sh
-# Convert Tiff to OME-Tiff
-~/software/bftools/bfconvert  -tilex 512 -tiley 512 -pyramid-resolutions 6 -pyramid-scale 2  -compression LZW data/raw/vectra_breast_cancer.tif data/processed/vectra_breast_cancer.ome.tif
+conda env create -f environment.yml
+conda activate vitessce-mesmer-processing
+```
 
-~/software/bftools/bfconvert  -tilex 512 -tiley 512 -pyramid-resolutions 6 -pyramid-scale 2  -compression LZW data/raw/vectra_breast_cancer_feature_0.tif data/processed/vectra_breast_cancer_feature_0.ome.tif
+Process the images for visualization:
 
-~/software/bftools/bfconvert  -tilex 512 -tiley 512 -pyramid-resolutions 6 -pyramid-scale 2  -compression LZW data/raw/vectra_breast_cancer_feature_1.tif data/processed/vectra_breast_cancer_feature_1.ome.tif
+```sh
+snakemake -j 1
+```
+
+Run the jupyter notebook for visualization:
+
+```sh
+jupyter lab
 ```
