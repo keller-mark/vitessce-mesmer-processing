@@ -6,6 +6,7 @@ data
     -> vectra_breast_cancer.tif
        vectra_breast_cancer_feature_0.tif
        vectra_breast_cancer_feature_1.tif
+```
 
 Create and activate the Python environment using `conda`:
 
