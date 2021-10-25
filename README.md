@@ -1,3 +1,11 @@
+Download data from https://deepcell.org/predict and put in new folder `data/raw`:
+
+```
+data
+  -> raw
+    -> vectra_breast_cancer.tif
+       vectra_breast_cancer_feature_0.tif
+       vectra_breast_cancer_feature_1.tif
 
 Create and activate the Python environment using `conda`:
 
