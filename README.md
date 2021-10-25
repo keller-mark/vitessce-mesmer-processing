@@ -15,6 +15,13 @@ conda env create -f environment.yml
 conda activate vitessce-mesmer-processing
 ```
 
+Update paths to software: https://github.com/keller-mark/vitessce-mesmer-processing/blob/main/Snakefile#L12
+- FIJI
+- bioformats tools
+
+Update path to data directory: https://github.com/keller-mark/vitessce-mesmer-processing/blob/main/src/t_to_c.js#L1
+
+
 Process the images for visualization:
 
 ```sh
